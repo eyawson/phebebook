@@ -5,8 +5,12 @@
   padding: 0.2em 0;
 }
 
+html {
+  background: url('../images/shecriedwolf.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
 body {
-  background: #020202;
   font-family: 'Open Sans', sans-serif;
   color: rgb(255, 255, 255);
   box-sizing: border-box;
@@ -19,20 +23,25 @@ a, button {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 320px) {
-  .background {
-    background-image: url('../images/shecriedwolf.jpg');
-    background-size: cover;
+/* @media only screen and (max-width: 320px) {
+  
+} */
+
+@media only screen and (min-width: 321px) {
+  html {
+    background: url('../images/shecriedwolf.jpg') no-repeat center center fixed;
+    top:0px;
+    left:0px;
+    height: 50%;
   }
-}
-
-@media only screen and (max-width: 768px) {
   
 }
 
-@media only screen and (min-width: 769px) {
-  
-}
+/* @media only screen and (min-width: 769px) {
+  .background {
+    background-image: url('../images/shecriedwolf.jpg') no-repeat center center fixed;
+  }
+} */
 
 .hero-unit {
   max-width: 50%;
