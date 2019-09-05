@@ -70,7 +70,7 @@ a.kyanite {
   footer {
     position: absolute;
     bottom: 1px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding-left: 10px;
   }
 }
@@ -81,7 +81,45 @@ a.kyanite {
     background-size: cover;
     overflow: hidden;
   }
-  
+  nav {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    font-size: 1.4em;
+  }
+  #show {
+    opacity: 0.3;
+  }
+  #show:hover {
+    opacity: 0.7;
+  }
+  main {
+    padding-top: 60px;
+  }
+  .timer {
+    margin-top: 10px;
+    text-align: center;
+  }
+  #test {
+    max-width: 80vw;
+    background-color: rgba(255,255,255, 0.3);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 80px;
+    padding: 10px;
+    border: 1px inset #e7d1a3;
+    overflow: scroll;
+    max-height: 7em;
+    scroll-behavior: smooth;
+  }
+  footer {
+    position: absolute;
+    bottom: 1px;
+    font-size: 0.7rem;
+    padding-left: 10px;
+  }
 }
 
 @media only screen and (min-width: 769px) {
