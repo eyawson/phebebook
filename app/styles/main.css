@@ -81,13 +81,22 @@ a.kyanite {
     background-size: cover;
     overflow: hidden;
   }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   nav {
     position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 6%;
     display: flex;
+    flex: 1;
     font-size: 1.4em;
+  }
+  nav>a {
+    padding: 10px;
+    display: inline-block;
+    flex: 1;
   }
   #show {
     opacity: 0.3;
@@ -96,7 +105,7 @@ a.kyanite {
     opacity: 0.7;
   }
   main {
-    padding-top: 60px;
+    padding-top: 65px;
   }
   .timer {
     margin-top: 10px;
