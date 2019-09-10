@@ -67,8 +67,11 @@ a.kyanite {
     max-height: 256;
     overflow: scroll;
   }
+  aside {
+    display: none;
+  }
   footer {
-    position: absolute;
+    position: fixed;
     bottom: 1px;
     font-size: 0.7rem;
     padding-left: 10px;
@@ -112,6 +115,7 @@ a.kyanite {
     opacity: 0.7;
   }
   main {
+    top: 6%;
     padding-top: 65px;
   }
   .timer {
@@ -130,8 +134,11 @@ a.kyanite {
     max-height: 7em;
     scroll-behavior: smooth;
   }
+  aside {
+    display: none;
+  }
   footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     font-size: 0.7rem;
     padding-left: 10px;
@@ -144,6 +151,12 @@ a.kyanite {
     background-image: url('../images/shecriedwide.jpg') no-repeat center center fixed;
     background-size: cover;
     overflow: hidden;
+  }
+  header,
+  main,
+  aside,
+  footer {
+    display: none;
   }
   body {
     max-width: 960px;
