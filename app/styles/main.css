@@ -35,13 +35,22 @@ a.kyanite {
   nav {
     display: flex;
   }
-  .timer {
+  i {
+    font-size: 1em;
+  }
+  iframe {
+    position: absolute;
+    padding-top: 15%;
     text-align: center;
+    left: 100px;
+  }
+  picture > img {
+    max-width: 100%;
   }
   aside {
     display: none;
   }
-  footer {
+  footer > P{
     font-size: 0.7rem;
     padding-left: 10px;
   }
