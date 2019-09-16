@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: rgb(255, 255, 255);
+  color: #020202;
   box-sizing: border-box;
   font-size: 16px;
   margin: 0 auto;
@@ -20,148 +20,37 @@ a, button {
 
 nav.a,
 .fas,
-.fab,
-a#hide {
-  color: #ffffff;
-  /* padding: 0 20px;
-  text-align: center; */
+.fab {
+  color: rgb(231, 209, 163);
 }
 
 a.kyanite {
-  color: #ffffff;
+  color: #020202;
 }
 
 @media only screen and (max-width: 320px) {
-  html {
-    background: url('../images/shecriedwolf.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
+  .largerScreen {
+    display: none;
   }
   nav {
-    position: absolute;
-    top: 45px;
-    left: 48px;
-    right: 70px;
     display: flex;
   }
-  #show {
-    opacity: 0.3;
-  }
-  #show:hover {
-    opacity: 0.7;
-  }
-  main {
-    padding-top: 60px;
-  }
   .timer {
-    margin-top: 10px;
     text-align: center;
-  }
-  #test {
-    max-width: 80vw;
-    font-size: 0.7em;
-    background-color: rgba(255,255,255, 0.3);
-    margin-left: 20px;
-    margin-top: 90px;
-    padding: 10px;
-    border: 1px inset #e7d1a3;
-    max-height: 256;
-    overflow: scroll;
   }
   aside {
     display: none;
   }
   footer {
-    position: fixed;
-    bottom: 1px;
     font-size: 0.7rem;
     padding-left: 10px;
   }
 }
 
 @media only screen and (min-width: 321px) {
-  html {
-    background: url('../images/shecriedwide.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
-    overflow: hidden;
-  }
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  nav {
-    position: absolute;
-    top: 6%;
-    display: flex;
-    flex: 1;
-    font-size: 1.4em;
-  }
-  nav>a {
-    padding: 10px;
-    display: inline-block;
-    flex: 1;
-    text-align: center;
-    cursor: pointer;
-  }
-  .fas:hover,
-  .fab:hover,
-  .far:hover {
-    color: #e7d1a3;
-  }
-  #show {
-    opacity: 0.3;
-  }
-  #show:hover {
-    opacity: 0.7;
-  }
-  main {
-    margin-top: 10px;
-    padding-top: 65px;
-  }
-  .timer {
-    margin-top: 10px;
-    text-align: center;
-  }
-  #test {
-    max-width: 80vw;
-    background-color: rgba(255,255,255, 0.3);
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 80px;
-    padding: 10px;
-    border: 1px inset #e7d1a3;
-    overflow: scroll;
-    max-height: 7em;
-    scroll-behavior: smooth;
-  }
-  aside {
-    display: none;
-  }
-  footer {
-    position: fixed;
-    bottom: 0;
-    font-size: 0.7rem;
-    padding-left: 10px;
-    height: 2rem;
-  }
+  
 }
 
 @media only screen and (min-width: 769px) {
-  html {
-    background-image: url('../images/shecriedwolf.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
-    overflow: hidden;
-  }
-  header,
-  main,
-  aside,
-  footer {
-    display: none;
-  }
-  body {
-    max-width: 960px;
-  }
+  
 }
