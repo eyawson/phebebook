@@ -12,6 +12,7 @@ body {
   box-sizing: border-box;
   font-size: 16px;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 a, button {
@@ -19,20 +20,49 @@ a, button {
   text-decoration: none;
 }
 
-a.kyanite {
+a > img {
+  max-width: 100%;
+}
+
+a.kyanite,
+footer > span,
+footer > a > i.fab,
+footer > a > i.fas,
+footer > p {
   color: #ffffff;
 }
 
+h2 {
+  border-bottom: 2px solid #3a2101;
+}
+h4 {
+  border-bottom: 1px solid #3a2101;
+}
+
+picture > img {
+  max-width: 100%;
+}
+
+section >img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 0.75rem #3a2101);
+}
+
 @media only screen and (max-width: 360px) {
-  .largerScreen {
-    display: none;
-  }
   header {
     display: flex;
     align-items: center;
     border-top: 5px solid;
     border-image: linear-gradient(45deg, rgb(13, 15, 33), rgb(246, 179, 75)) 1;
     padding-left: 3.6%;
+  }
+  a.logo {
+    max-width: 75px;
+    max-height: 75px;
   }
   nav {
     display: flex;
@@ -53,15 +83,6 @@ a.kyanite {
     text-align: center;
     left: 50%;
     margin-left: -60px;
-  }
-  picture > img {
-    max-width: 100%;
-  }
-  h2 {
-    border-bottom: 2px solid #3a2101;
-  }
-  h4 {
-    border-bottom: 1px solid #3a2101;
   }
   .more {
     padding-left: 10px;
@@ -81,15 +102,8 @@ a.kyanite {
     background-color: #3a2101;
     padding-top: 40px;
   }
-  footer > span,
-  footer > a > i.fab,
-  footer > a > i.fas {
-    color: #ffffff;
-  }
-  footer > P{
+  footer > p{
     font-size: 0.8rem;
-    color: #ffffff;
-    
   }
 }
 
@@ -106,6 +120,12 @@ a.kyanite {
     justify-content: space-between;
     font-size: 3.5rem;
     overflow: hidden;
+  }
+  .logo {
+    display: flex;
+    flex-grow: 1;
+    max-height: 72px;
+    max-width: 72px;
   }
   nav {
     display: flex;
@@ -126,15 +146,6 @@ a.kyanite {
     text-align: center;
     left: 50%;
     margin-left: -60px;
-  }
-  picture > img {
-    max-width: 100%;
-  }
-  h2 {
-    border-bottom: 2px solid #3a2101;
-  }
-  h4 {
-    border-bottom: 1px solid #3a2101;
   }
   .more {
     padding-left: 10px;
@@ -158,17 +169,11 @@ a.kyanite {
     background-color: #3a2101;
     padding-top: 40px;
   }
-  footer > span,
-  footer > a > i.fab,
-  footer > a > i.fas {
-    color: #ffffff;
+  footer > a {
+    font-size: 2rem;
   }
-  footer > .fa-1x {
-    font-size: 2.5rem;
-  }
-  footer > P{
-    font-size: 0.8rem;
-    color: #ffffff;
+  footer > p{
+    font-size: 1.4rem;
   }
 }
 
