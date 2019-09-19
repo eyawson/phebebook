@@ -153,8 +153,7 @@ footer {
     grid-template-areas:
       "header header"
       "main current"
-      "article article"
-      "bio bio"
+      "bio aside"
       "footer footer";
   }
   header {
@@ -198,6 +197,9 @@ footer {
   picture > img {
     max-width: 100%;
   }
+  article .more {
+    padding-top: 300px;
+  }
   h2 {
     border-bottom: 2px solid #3a2101;
   }
@@ -211,10 +213,20 @@ footer {
   article {
     margin-top: 40px;
     margin-bottom: 40px;
-    grid-area: article;
+    padding-top: 300px;
+    grid-area: current;
   }
   aside {
-    display: none;
+    display: block;
+    max-width: 90%;
+    max-height: 500px;
+    overflow-y: scroll;
+    grid-area: aside;
+  }
+  aside h2 {
+    position: sticky;
+    top: 0px;
+    background: #ffffff;
   }
   footer {
     text-align: center;
@@ -232,5 +244,11 @@ footer {
   footer > P {
     font-size: 0.8rem;
     color: #ffffff;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  body {
+    max-width: 960px;
   }
 }
