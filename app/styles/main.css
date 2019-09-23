@@ -81,6 +81,14 @@ section >img {
   filter: drop-shadow(0 0 0.75rem #3a2101);
 }
 
+.events > ul > li,
+li > a {
+  color: #f4b34a;
+}
+li > span {
+  font-weight: bolder;
+}
+
 footer {
   text-align: center;
   margin-top: 60px;
@@ -155,6 +163,9 @@ footer {
       "main current"
       "bio aside"
       "footer footer";
+  }
+  .events {
+    display: none;
   }
   header {
     font-size: 3.5rem;
@@ -250,5 +261,8 @@ footer {
 @media only screen and (min-width: 961px) {
   body {
     max-width: 960px;
+  }
+  .events {
+    display: none;
   }
 }
