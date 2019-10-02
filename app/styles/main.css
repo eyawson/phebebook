@@ -1,4 +1,3 @@
-/*=========major cleanup will be done to remove duplicating of styles in viewports=============*/
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -89,6 +88,22 @@ li > a {
   font-weight: bolder;
 }
 
+#mc_embed_signup {
+  background: #ffffff;
+  clear: left;
+  max-width: 80%;
+  margin: auto;
+  padding-top: 90px;
+}
+#mc_embed_signup .button {
+  background-color: #3a2101;
+  border-radius: 5px;
+  width: auto;
+}
+#mce-EMAIL {
+  width: 80%;
+}
+
 footer {
   text-align: center;
   margin-top: 60px;
@@ -162,6 +177,7 @@ footer {
       "header header"
       "main current"
       "aside bio"
+      "chimp chimp"
       "footer footer";
   }
   header {
@@ -212,6 +228,13 @@ footer {
   .events {
     grid-area: current;
   }
+  #mc_embed_signup {
+    grid-area: chimp;
+  }
+  #mc_embed_signup input.email {
+    width: 400px;
+    margin-bottom: 10px;
+}
   main > p {
     border-left: 10px solid #f4b34a;
     margin-top: 0;
@@ -278,5 +301,9 @@ footer {
 @media only screen and (min-width: 961px) {
   body {
     max-width: 960px;
+  }
+  #mc_embed_signup {
+    margin: 0;
+    padding-left: 10%;
   }
 }
