@@ -2,3 +2,6 @@
 
 User-agent: * 
 Disallow:
+
+# Sitemap files
+Sitemap: https://phebeyawson.com/sitemap.xml
