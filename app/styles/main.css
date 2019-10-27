@@ -67,7 +67,8 @@ h4 {
   border-bottom: 1px solid #3a2101;
 }
 
-picture > img {
+picture > img,
+section > div > figure > img {
   max-width: 100%;
 }
 
@@ -79,6 +80,25 @@ section >img {
   border-radius: 50%;
   filter: drop-shadow(0 0 0.75rem #3a2101);
 }
+.blog {
+  padding: 0 10px;
+}
+
+.blogTitle {
+  font-weight: bold;
+}
+.blogTitle > span {
+  font-style: italic;
+}
+
+/* .blog {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.post {
+  display: inline-block;
+} */
 
 .events > ul > li,
 li > a {
@@ -176,7 +196,8 @@ footer {
     grid-template-areas:
       "header header"
       "main current"
-      "aside bio"
+      "aside blog"
+      "bio bio"
       "chimp chimp"
       "footer footer";
   }
@@ -225,6 +246,18 @@ footer {
   #bio {
     grid-area: bio;
   }
+  #bio > img {
+    max-width: 40%;
+    display: inline-block;
+  }
+  #aboutPhebe {
+    max-width: 50%;
+    display: inline-block;
+  }
+  .blog {
+    grid-area: blog;
+    display: inline-block;
+  }
   .events {
     grid-area: current;
   }
@@ -270,7 +303,7 @@ footer {
   aside {
     display: block;
     max-width: 90%;
-    max-height: 500px;
+    max-height: 700px;
     overflow-y: scroll;
     grid-area: aside;
   }
