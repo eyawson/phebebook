@@ -34,7 +34,7 @@ runJS();
 
 const timer = () => {
     // Set the date we're counting down to
-let countDownDate = new Date('Nov 20, 2019 23:59:27').getTime();
+let countDownDate = new Date('Oct 31, 2019 23:59:27').getTime();
 
 // Update the count down every 1 second
 let x = setInterval(function() {

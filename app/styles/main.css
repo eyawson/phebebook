@@ -86,6 +86,8 @@ section >img {
 
 .blogTitle {
   font-weight: bold;
+  max-width: 90%;
+  padding-left: 10px;
 }
 .blogTitle > span {
   font-style: italic;
