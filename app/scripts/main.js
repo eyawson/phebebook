@@ -9,6 +9,17 @@ const runJS = () => {
     const aboutPhebe = document.getElementById('aboutPhebe');
     aboutPhebe.innerHTML = aboutHer;
 
+    $('#reviews > div:gt(0)').hide();
+
+    setInterval(function() { 
+        $('#reviews > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#reviews');
+    },  3000);
+
     /* $(document).ready(() => {
         $('#hide').on('click',() => {
             $('main, footer, .fab, .fas').hide();
